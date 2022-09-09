@@ -1,13 +1,13 @@
-nclude<stdio.h>                                                                                                      
-                                                                                                                       
-/**                                                                                                                    
- * main - Entry point                                                                                                  
+#include<stdio.h>
+
+/**
+ * main - Entry point
  *
  * codes for printing all possible combination of two d/t digits
  * in assending order and separated by a comma followed by a space
  *
- * Return: Always 0 (Success)                                                                                          
- */                                                                                                                    
+ * Return: 0 (Success)
+ */
 int main(void)
 {
 	int digit1, digit2, digit3;
