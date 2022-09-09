@@ -5,7 +5,7 @@
  * numbers
  * Return: returns zero at the end
  */
-int main(void);
+int main(void)
 {
 	int i, p;
 
