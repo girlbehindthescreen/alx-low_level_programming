@@ -47,8 +47,10 @@ int main(void)
 				break;
 			}
 		}
-	}
-	printf("%s", password);
+		}
+		}
+		printf("%s", password);
 
-	return (0);
+		return (0);
+	}
 }
