@@ -16,9 +16,9 @@ int main(void)
 
 	srand(time(0));
 
-	while (sun < 2772)
+	while (sum < 2772)
 	{
-		password[index] = 33 + rand90 % 94;
+		password[index] = 33 + rand() % 94;
 		sum += password[index++];
 	}
 
