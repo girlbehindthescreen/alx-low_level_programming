@@ -1,30 +1,23 @@
 #include "main.h"
 
 /**
- * cap_string - capitalizes all words of a string
- * @s: input string.
- * Return: the pointer to dest.
+ * reverse_array - reverse the content of an array
+ * of integers
+ * @a: array
+ * @n: number of elements of the array
+ * Return: no return
  */
-char *cap_string(char *s)
+void reverse_array(int *a, int n)
 {
-	int count = 0, i;
-	int separators[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
-
-	if (*(s + count) >= 97 && *(s + count) <= 122)
-		*(s + count) = *(s + count) - 32;
-	count++;
-	while (*(s + count) != '\0')
+	int i, j, temp;
+	
+	for (i = 0; i < n - 1; i++)
 	{
-		for (i = 0; i < 13; i++)
+		for (j = i + 1; j > 0; j--)
 		{
-			if (*(s + count) == separators[i])
-			{
-				if ((*(s + (count + 1)) >= 97) && (*(s + (count + 1)) <= 122))
-					*(s + (count + 1)) = *(s + (count + 1)) - 32;
-				break;
-			}
+			temp  = *(a + j);
+			*(a + j) = *(a + (j - 1));
+			*(a + (j - 1)) = temp;
 		}
-		count++;
 	}
-	return (s);
 }
