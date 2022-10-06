@@ -74,7 +74,7 @@ char *iterate_zeroes(char *str)
  *              exits with a status of 98.
  * Return: The converted int.
  */
-int get_digit(char c)
+int get_digit(char *c)
 {
 	int digit = c - '0';
 
