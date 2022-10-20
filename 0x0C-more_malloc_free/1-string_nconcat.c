@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 #include "main.h"
 #include <stdlib.h>
 
@@ -45,4 +42,3 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	return (concat);
 }
->>>>>>> fe3fb5e8bc4860ae15f94c7ce3b1275b9e9f11e3
